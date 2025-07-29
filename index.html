@@ -274,8 +274,10 @@
 
         .service-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+            max-width: 1000px;
+            margin: 0 auto;
         }
 
         .service-card {
@@ -293,7 +295,6 @@
 
         .service-card:nth-child(1) { animation-delay: 0.2s; }
         .service-card:nth-child(2) { animation-delay: 0.4s; }
-        .service-card:nth-child(3) { animation-delay: 0.6s; }
 
         .service-card:hover {
             transform: translateY(-10px);
@@ -589,7 +590,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>JR Media</h1>
-            <p>Transforming Ideas into Digital Experiences</p>
+            <p>Helping Businesses Achieve Greater Success Through Technology</p>
             <a href="#contact" class="cta-button">Get Started</a>
         </div>
     </section>
@@ -598,19 +599,14 @@
         <h2>Our Services</h2>
         <div class="service-grid">
             <div class="service-card">
-                <div class="service-icon">🎬</div>
-                <h3>Video Production</h3>
-                <p>Professional video production services including commercials, documentaries, and corporate videos with cutting-edge equipment and creative storytelling.</p>
+                <div class="service-icon">🤖</div>
+                <h3>AI Automations</h3>
+                <p>Streamline your business operations with intelligent automation solutions. From customer service chatbots to data processing workflows, we implement AI systems that work 24/7 to boost efficiency and reduce operational costs.</p>
             </div>
             <div class="service-card">
-                <div class="service-icon">📱</div>
-                <h3>Digital Marketing</h3>
-                <p>Comprehensive digital marketing strategies including social media management, content creation, and brand development to amplify your online presence.</p>
-            </div>
-            <div class="service-card">
-                <div class="service-icon">🎨</div>
-                <h3>Creative Design</h3>
-                <p>Innovative graphic design, web development, and branding solutions that capture your vision and communicate your message effectively.</p>
+                <div class="service-icon">☁️</div>
+                <h3>Software-as-a-Service</h3>
+                <p>Custom SaaS platforms designed to scale with your business. We build cloud-based solutions that generate recurring revenue streams while providing exceptional value to your customers through innovative software applications.</p>
             </div>
         </div>
     </section>
@@ -618,27 +614,9 @@
     <section id="about" class="about reveal">
         <div class="about-content">
             <div class="about-text">
-                <h2>About JR Media</h2>
-                <p>We are a dynamic media company specializing in creating compelling visual content and digital experiences. Our team combines technical expertise with creative vision to deliver exceptional results.</p>
-                <p>From concept to completion, we work closely with our clients to bring their ideas to life through innovative storytelling and cutting-edge technology.</p>
-                <div class="stats">
-                    <div class="stat">
-                        <span class="stat-number">150+</span>
-                        <span class="stat-label">Projects Completed</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-label">Happy Clients</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">5+</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
-                    <div class="stat">
-                        <span class="stat-number">24/7</span>
-                        <span class="stat-label">Support</span>
-                    </div>
-                </div>
+                <h2>Partner with JR Media</h2>
+                <p>JR Media specializes in strategic partnerships that drive measurable business growth. We work alongside forward-thinking companies to implement cutting-edge technology solutions that simultaneously reduce operational costs and increase top-line revenue.</p>
+                <p>Our approach focuses on identifying untapped opportunities within your business processes and developing custom AI automations and SaaS platforms that create new revenue streams while optimizing existing operations. When you partner with us, you're not just getting a service provider – you're gaining a strategic ally committed to your long-term success and profitability.</p>
             </div>
         </div>
     </section>
@@ -657,7 +635,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2025 JR Media. All rights reserved. | Email: contact@jrmedia.biz</p>
+        <p>&copy; 2025 JR Media. All rights reserved. | Email: jason@jrmedia.biz</p>
     </footer>
 
     <script>
@@ -737,7 +715,7 @@
             button.disabled = true;
             
             // Create mailto link with form data
-            const mailtoLink = `mailto:contact@jrmedia.biz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+            const mailtoLink = `mailto:jason@jrmedia.biz?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
                 `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
             )}`;
             
@@ -766,11 +744,11 @@
                 navigator.clipboard.writeText(formData).then(() => {
                     button.textContent = 'Copied to Clipboard!';
                     button.style.background = 'linear-gradient(45deg, #ffd93d, #ff9f43)';
-                    showNotification('Message copied to clipboard! Please email it to contact@jrmedia.biz', 'info');
+                    showNotification('Message copied to clipboard! Please email it to jason@jrmedia.biz', 'info');
                 }).catch(() => {
                     button.textContent = 'Please Email Us';
                     button.style.background = 'linear-gradient(45deg, #ff6b6b, #ee5a52)';
-                    showNotification('Please email your message to: contact@jrmedia.biz', 'info');
+                    showNotification('Please email your message to: jason@jrmedia.biz', 'info');
                 });
                 
                 setTimeout(() => {
